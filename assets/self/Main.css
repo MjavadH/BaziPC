@@ -1,0 +1,440 @@
+/* ----- تنظیمات اصلی ----- */
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body {background: #001833;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;font-size:16px;direction:rtl;overflow-x:hidden;}
+body {font-family: 'Vazir',Tahoma,sans-serif;transition: 0.3s;-moz-transition: 0.3s;-o-transition: 0.3s;-webkit-transition: 0.3s}
+::-webkit-scrollbar{width: calc(.5rem + 1px);background: linear-gradient(80deg,rgba(255,255,255,0.1),rgba(255,255,255,0.4),rgba(255,255,255,0.2), rgba(255, 255, 255, 0.6));}
+::-webkit-scrollbar-thumb{background: rgba(255,255,255,0.5);border-radius: 10px}
+::selection{background-color: #94b0b7}
+.night ::selection{background-color: #041b2d}
+a{text-decoration: none !important;white-space: nowrap;}
+/* ----- fal ----- */
+@font-face {
+    font-family: 'IconFont';
+    src: url('../Font/fa-light-300.eot'); /* IE9 Compat Modes */
+    src: url('../Font/fa-light-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../Font/fa-light-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../Font/fa-light-300.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../Font/fa-light-300.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+/* ----- fab ----- */
+@font-face {
+    font-family: 'IconFontBrand';
+    src: url('../Font/fa-brands-400.woff2') format("woff2");
+}
+/* ----- Vazir ----- */
+@font-face {
+    font-family: 'Vazir';
+    src: url('../Font/Vazir-Light.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Vazir-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../Font/Vazir-Light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../Font/Vazir-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../Font/Vazir-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Titr';
+    src: url('../Font/Vazir-Black-UI.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Vazir-Black-UI.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../Font/Vazir-Black-UI.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../Font/Vazir-Black-UI.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../Font/Vazir-Black-UI.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+i{font-family: IconFont, serif !important;vertical-align: middle;}
+i.fa-instagram,i.fa-windows{font-family: IconFontBrand,serif !important}
+h1,h2,h3,h4,h5,h6{font-family: 'Titr',fantasy,sans-serif}
+.tooltip{z-index: 1200;font-family: 'Vazir' ,sans-serif}
+/* ----- منو ----- */
+nav{
+    position: fixed;
+    z-index: 1200;
+    font-weight: 400;
+    font-family: 'Vazir',sans-serif;
+    background-color: #dfdfdf;
+    color: black;
+}
+nav ul li a{
+    color: black;
+    transition: 0.2s linear;
+}
+nav ul li a:hover{
+    transition: 0.2s linear;
+}
+nav ul li:hover a .fa-paper-plane{color: #00d9ca !important; transition: 0.2s linear}
+nav ul li:hover a .fa-instagram{color: #b82230 !important; transition: 0.2s linear}
+.night-mode{
+    padding: .25rem .75rem;
+}
+.night-mode input[type="checkbox"]
+{
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    -webkit-appearance: none;
+    background-color: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.night .night-mode input[type="checkbox"]
+{
+    background-color: #00ffed;
+}
+.night-mode input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: 0.5s;
+}
+.night .night-mode input[type="checkbox"]:before
+{
+    left: 30px;
+    box-shadow: 0 0 9px #daa626;
+}
+.night-icon{
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    cursor: pointer;
+    transition: .5s;
+}
+.fa-search{cursor: pointer}
+.search-box{
+    display: none;
+    position: absolute;
+}
+.fa-times-circle{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+
+.Mobile-Toggle{
+    display: none;
+    user-select: none;
+    cursor: pointer;
+    margin: .75rem;
+    position: relative;
+    padding: 10px;
+    transition: .75s;
+}
+.Mobile-Toggle span:nth-child(1){
+    content: '';
+    position: absolute;
+    width: 25px;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    transition: .75s;
+}
+.Mobile-Toggle span:nth-child(2) {
+    content: '';
+    position: absolute;
+    width: 25px;
+    top: 7px;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    transition: .75s;
+}
+.Mobile-Toggle span:nth-child(3) {
+    content: '';
+    position: absolute;
+    width: 25px;
+    top: 14px;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    transition: .75s;
+}
+/* ----- بدنه اصلی ----- */
+.Banner{
+    margin: .75rem 0;
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+}
+.Banner-Photo{
+    height: 260px;
+    display: block;
+    background: url("../../image/Banner.jpg") no-repeat  50% 50%;
+    background-size: cover;
+    border-radius: 0 calc( 1.25rem - 2px) calc( 1.25rem - 2px) 0;
+}
+.Banner-Photo2{
+    height: 260px;
+    display: block;
+    background: url("../../image/SisMisSmart.jpg") no-repeat  50% 50%;
+    background-size: cover;
+    border-radius: calc( 1.25rem - 2px) 0 0 calc( 1.25rem - 2px);
+}
+.Banner div p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Titr','Vazir',sans-serif;
+    padding: .25rem;
+    margin: .25rem 0;
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+    transform: translateY(-5px);
+}
+.Banner div:hover p{
+    height:  35px;
+    transition: height .5s ease-in-out;
+}
+.nav-tabs, .tab-content {
+    font-family: 'Vazir',Tahoma, sans-serif !important;
+}
+.active.show i{
+    -webkit-animation: Heart 0.2s ease-in-out;
+    -o-animation: Heart 0.2s ease-in-out;
+    animation: Heart 0.2s ease-in-out;
+}
+@keyframes Heart {
+    50%{transform: scale(1.2)}
+}
+main{
+    width: 100%;
+    background: #bfbfbf;
+    padding: .75rem;
+    position: relative;
+    z-index: 12;
+    -webkit-font-smoothing:antialiased;
+    font-family: "Vazir",sans-serif;
+}
+.row{
+    --bs-gutter-x: 0;
+}
+.path{
+    border-radius: calc( 1.25rem - 2px);
+    padding: 0.5rem;
+    background: #dcdefb;
+    font-size: 1.1rem;
+}
+.path a{color: #808080;transition: linear .2s}
+.path a:hover{color: #4c4c4c;letter-spacing: .02rem;transition: 0.2s linear}
+
+.nav-tabs,.tab-content{font-family: system-ui,Tahoma, sans-serif}
+.card-footer,.card-header{background-color: #cccccc;}
+.card-body{background-color: #f2f2f2}
+.top-box-left .card , .top-box-left .card .card-body{border-radius: calc( 1.25rem - 2px);}
+.top-box-right .card .card-body, .left-box .card .card-body,.right-box .card .card-footer{border-radius: 0 0 calc( 1.25rem - 2px) calc( 1.25rem - 2px)}
+.top-box-right .card .card-header , .left-box .card .card-header , .right-box .card .card-body{border-radius: calc( 1.25rem - 2px) calc( 1.25rem - 2px) 0 0}
+.top-box-right .card, .left-box .card,.right-box .card{border-radius: calc( 1.25rem - 2px)}
+.left-box img {border-radius: calc( .75rem + 2px)}
+.nav-link i{vertical-align: middle}
+.nav-link.active{background: #f2f2f2 !important}
+.nav-tabs .nav-link{border: none!important;border-radius: calc( 1.25rem - 2px) calc( 1.25rem - 2px) 0 0;}
+.nav-tabs a{color: #677b80}
+.tab-content a,.Practical-Software a{color: #7c9399;transition: all 0.2s ease-in-out}
+.tab-content a:hover,.Practical-Software a:hover{color: #677b80;margin-right: .25rem;transition: all 0.2s ease-in-out}
+.btn-success:hover{
+    transform: scale3d(1.05,1.05,1.05);
+    transition: 300ms ease-in-out;
+}
+
+.rate i{vertical-align: middle;letter-spacing: 2px}
+.rate i.active{color: #daa626;}
+
+.newGame,.soonGame,.FutureGames,.imagead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .45rem;
+    transition: 0.2s ease;
+    user-select: none !important;
+}
+.newGame:hover,.soonGame:hover,.FutureGames:hover img,.imagead:hover{
+    filter: brightness(50%);
+    transition: 0.2s ease;
+}
+.title-Future{
+    position: absolute;
+    background: linear-gradient(80deg,rgba(255,255,255,0.1),rgba(255,255,255,0.4),rgba(255,255,255,0.2),rgba(255,255,255,0.6));
+    color: #07080d;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+    transition: ease-in-out 0.5s;
+    border-top: 1px rgba(255,255,255,0.5) groove;
+    border-radius: 25px 0 0 0;
+    opacity: 0;
+}
+.FutureGames:hover .title-Future{
+    transition: ease-in-out 0.5s;
+    width: 100%;
+    opacity: 1;
+}
+/* ----- فوتر ----- */
+.footer{
+    height: 92vh;
+    background: linear-gradient(rgba(255,255,255,.9),rgb(255,255,255));
+    font-family: 'Vazir',sans-serif;
+}
+.F-cards{
+    margin: .75rem auto;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer-card{
+    border: #111111 1px solid;
+    padding: .5rem;
+    margin: .5rem .75rem;
+    border-radius: calc(.5rem - 2px);
+}
+.F-cards-titr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-25px);
+}
+.F-cards-titr i{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    width: 65px;
+    background: #e9ebed;
+    border-radius: 50%;
+}
+/* ----- حالت شب ----- */
+.nigh ,.night p,.night span,.night h1,.night h2,.night h3,.night h4,.night h5{color: #f1f1f1; !important;}
+.night nav{background-color: #151126;color: #f1f1f1;}
+.night i:not(nav i){color: #ddd}
+.night .night-icon{left: 42px;transition: .5s;}
+.night .search-box input{background-color: #14141d;color: #f1f1f1;border: rgb(19,0,95) solid 1px;}
+.night .night-icon path{fill: #daa626}
+.night img{filter: brightness(75%)}
+.night nav .Mobile-Toggle span{background-color: #dddddd;}
+.night nav ul li a:hover{color: #495bf9 !important;}
+.night nav a{color: #f1f1f1;}
+.night main{background-color: rgb(16,13,36);}
+.night .nav-link.active{background-color: #07060d !important;color: #ddd}
+.night .card{border: none}
+.night .card-body,.night .Setting-box{background-color: #07060d;}
+.night .card-footer,.night .card-header{background-color: #0e0c1a;}
+.night .path{background: #0e0c19}
+.night .footer{background: linear-gradient(rgba(19,0,95,.5),#07060d);}
+.night .footer-card{border: #ddd 1px solid;}
+.night .F-cards-titr i{background: #090b43}
+/* ----- آیکون های SVG ----- */
+.svg-icon {
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #111;
+}
+
+.svg-icon circle {
+    stroke: #111;
+    stroke-width: 1;
+}
+/* ----- نشانک تولتیپ ----- */
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow, .bs-tooltip-bottom .arrow {
+    top: 0;
+}
+.bs-tooltip-auto[x-placement^=top], .bs-tooltip-top {
+    padding: .4rem 0;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow, .bs-tooltip-top .arrow {
+    bottom: 0;
+}
+.tooltip .arrow {
+    position: absolute;
+    display: block;
+    width: .8rem;
+    height: .4rem;
+}
+.tooltip .arrow::before {
+    position: absolute;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+    bottom: 0;
+    border-width: 0 .4rem .4rem;
+    border-bottom-color: #000;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+    top: 0;
+    border-width: .4rem .4rem 0;
+    border-top-color: #000;
+}
+/* ----- تغییر نحوه نمایش در موبایل ----- */
+@media (max-width: 767px) {
+    .Banner-Photo,.Banner-Photo2{
+        border-radius: calc( 1.25rem - 2px);
+    }
+}
+@media(max-width: 992px) {
+    .Mobile-Toggle{
+        display: block;
+    }
+    .Mobile-Toggle.active span:nth-child(1) {
+        transform: rotate(-45deg);
+    }
+    .Mobile-Toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .Mobile-Toggle.active span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 14px;
+        top: 0;
+    }
+    .night-icon{
+        right: 45px;
+        transition: ease-in-out .9s;
+    }
+    .night .night-icon{
+        right: 13px;
+        transition: ease-in-out .8s;
+    }
+    .navbar-link{
+        display: block;
+        visibility: hidden;
+        width: 100%;
+        height: 1px;
+        opacity: 0;
+        transition: 0.9s ease-in-out;
+    }
+    .Mobile-menu {
+        visibility: visible;
+        opacity: 1;
+        height: 310px;
+        transition: 0.8s ease-in-out;
+    }
+    .Mobile-night-icon{
+        top: 323px !important;
+        transition: ease-in-out .8s;
+    }
+    .Banner a{
+        height: 130px;
+    }
+    .nav-tabs .nav-link{border-radius: .25rem .25rem 0 0}
+    .footer{height: auto;}
+    .footer-card{margin: .75rem auto}
+}

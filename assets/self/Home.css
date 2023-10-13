@@ -1,0 +1,182 @@
+.right-box{border-radius: calc( 1.25rem - 2px)}
+
+.polygonS,.polygonC,.polygonX,.polygonV{
+    position: fixed !important;
+}
+.top-home{
+    height: 100vh;
+    background: rgb(16,13,36) fixed 50% 50%;
+    background-size: cover;
+    z-index: 0;
+}
+.title{
+    position: absolute !important;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #f0f0f0;
+}
+.dot{
+    content: '';
+    width: 8px;
+    display: inline-block;
+    height: 8px;
+    margin: 0 .25rem;
+    background-color: #111111;
+    border-radius: 50%;
+}
+.night .dot{background-color: #666c79}
+.image{border-radius: calc( 1.25rem - 2px);}
+.service-card{
+    width: calc(33% - 20px);
+    margin: .5rem 0;
+    border-radius: calc( 1.25rem - 2px);
+    border: rgba(19,0,95,.5) 1px solid;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+.service-card:hover{background-color: rgba(19,0,95,.5)}
+.logo{
+    background: rgba(19,0,95,.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card:hover .logo .fa{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+#request-textarea{
+    max-height: 417px;
+}
+.night #request-textarea,.night #request-input,.night #request-select{
+    background-color: rgba(19,0,95,.2);
+    border: rgb(19,0,95) solid 1px;
+    color: #f1f1f1;
+}
+.night option{
+    background-color: rgb(11, 0, 38);
+}
+
+.footer div{z-index: 20;}
+/* ----- error 404 ----- */
+.polygonX
+{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: rotateZ(25deg);
+    width: 80px;
+    height: 80px;
+    border: none;
+    background: linear-gradient(25deg,#00ffed,#9d00c6);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+.polygonV
+{
+    content: '';
+    position: absolute;
+    right: 90px;
+    bottom: 80px;
+    transform: rotateZ(-25deg);
+    width: 120px;
+    height: 120px;
+    border: none;
+    background: linear-gradient(-25deg,#9d00c6,#00ffed);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.polygonS{
+    content: '';
+    position: absolute;
+    left: 120px;
+    bottom: 80px;
+    transform: rotateZ(15deg);
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: linear-gradient(15deg,#0afb60,#1eadf0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.polygonC{
+    content: '';
+    position: absolute;
+    right: 120px;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: linear-gradient(#1eadf0,#0afb60);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.card-main{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 30px 45px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    color: #f0f0f0;
+    overflow-y: auto;
+    border: 1px solid rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 12;
+    user-select: none;
+}
+
+.card-main{
+    backdrop-filter: blur(5px);
+}
+
+.card-main h2{
+    position: relative;
+    top: -140px;
+}
+.content{
+    text-align: center;
+}
+.carde p{
+    font-size: 1.2rem;
+}
+.link{
+    position: relative;
+    top: 40px;
+}
+.link a{
+    color: #fff3cd;
+    border-color: #f0f0f0;
+}
+.link a:hover {
+    background-color: #f0f0f0;
+}
+@media(max-width: 999px) {
+    .Sword{
+        width: 50px;
+        height: 50px;
+    }
+    .polygonC,.polygonS{
+        visibility: hidden;
+    }
+    .card-main h2{
+        top: -50px;
+    }
+
+    .service-card{
+        width: 100%;
+    }
+
+}
+.error404{
+    font-size: 5rem;
+    font-weight: 600;
+}

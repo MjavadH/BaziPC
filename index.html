@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>بازی پیسی | bazipc</title>
+    <!-- بخش سئو -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="image/icon.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- لینک های css -->
+    <link rel="stylesheet" href="assets/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/self/Main.css">
+    <link rel="stylesheet" href="assets/self/Home.css">
+    <link rel="stylesheet" href="assets/aos.css">
+    <link rel="stylesheet" href="assets/fontawesome.min.css">
+
+</head>
+<body class="">
+<nav class="navbar fixed-top">
+    <ul class="nav navbar-link">
+        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="شما هم اکنون در این بخش هستید"><a href="index.html" class="nav-link">صفحه اصلی<i class="fa fa-home mx-1"></i></a></li>
+        <li class="nav-item"><a href="ListGame.html" class="nav-link">لیست بازی ها <i class="fa fa-gamepad mx-1"></i></a></li>
+        <li class="nav-item"><a href="ListSoftware.html" class="nav-link">لیست نرم افزار ها<i class="fa fa-windows mx-1"></i></a></li>
+        <li class="nav-item"><a href="" class="nav-link">درباره ما<i class="fa fa-users mx-1"></i></a></li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="کانال تلگرام"><a href="" class="nav-link" id="Telegram"><i class="fa fa-paper-plane"></i></a></li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="کانال اینستاگرام"><a href="" class="nav-link" id="Instagram"><i class="fa fa-instagram"></i></a></li>
+        <li class="nav-item search">
+            <i class="fa fa-search fa-2x"></i>
+            <form class="search-box" data-toggle="tooltip" title="بعد از نوشتن اینتر بزنید" action="">
+                <label>
+                    <i class="fa fa-times-circle"></i>
+                    <input type="text" class="form-control" placeholder="دنبال چی میگردی؟">
+                </label>
+            </form>
+        </li>
+    </ul>
+    <ul class="nav navbar-Setting">
+        <li class="night-mode">
+            <label>
+                <input type="checkbox">
+                <svg class="svg-icon night-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502.001 502.001"  xml:space="preserve"  height="24">
+                    <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path style="fill:#FBB03B;" d="M191.622,310.378C111.647,230.404,101.976,105.871,161.042,10C72.148,48.759,10,137.399,10,240.57    C10,379.431,122.569,492,261.431,492c103.17,0,191.811-62.148,230.569-151.042C396.129,400.024,271.597,390.353,191.622,310.378z"/>
+                            <path d="M261.431,502c-69.831,0-135.481-27.193-184.859-76.571S0,310.4,0,240.57C0,136.532,61.644,42.43,157.045,0.834    c4.005-1.746,8.683-0.69,11.548,2.611c2.865,3.3,3.255,8.079,0.962,11.8c-58.118,94.333-46.136,212.789,29.137,288.062l0,0    c43.412,43.412,101.198,65.772,160.425,65.775c43.469,0.002,87.707-12.038,127.637-36.639c3.721-2.292,8.5-1.902,11.801,0.962    c3.301,2.865,4.357,7.542,2.611,11.548C459.57,440.356,365.469,502,261.431,502z M137.166,33.53    C65.113,76.787,20,155.044,20,240.57C20,373.695,128.305,482,261.431,482c85.525,0,163.783-45.113,207.04-117.167    c-41.854,19.137-88.248,27.223-133.563,22.93c-28.056-2.658-55.063-9.883-80.271-21.477    c-26.103-12.004-49.683-28.436-70.085-48.838c-20.402-20.402-36.833-43.982-48.838-70.084    c-11.593-25.209-18.819-52.216-21.477-80.272C109.944,121.781,118.03,75.385,137.166,33.53z"/>
+                        </g>
+                        <g>
+                            <path d="M260.265,463c-66.337,0-128.605-29.392-170.836-80.638c-3.512-4.262-2.904-10.564,1.358-14.077    c4.262-3.512,10.563-2.905,14.077,1.358C143.281,416.262,199.923,443,260.265,443c5.522,0,10,4.477,10,10S265.787,463,260.265,463    z"/>
+                        </g>
+                        <g>
+                            <path d="M77.01,356.913c-3.462,0-6.828-1.799-8.678-5.016c-3.001-5.219-5.821-10.623-8.38-16.063    c-2.352-4.997-0.207-10.955,4.791-13.306c4.996-2.353,10.955-0.206,13.306,4.791c2.327,4.946,4.891,9.86,7.621,14.605    c2.753,4.788,1.104,10.901-3.683,13.654C80.415,356.484,78.701,356.913,77.01,356.913z"/>
+                        </g>
+                    </g>
+                </svg>
+            </label>
+        </li>
+    </ul>
+    <div class="Mobile-Toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</nav>
+<div class="top-home">
+    <div class="polygonS"></div>
+    <div class="polygonC"></div>
+    <div class="polygonX"></div>
+    <div class="polygonV"></div>
+    <div class="title">
+        <h2 class="text-center">
+            به وبسایت بازی پیسی خوش آمدید
+            <svg xmlns="http://www.w3.org/2000/svg" class="Sword" viewBox="0 0 50 50" width="100" height="100">
+                <path d="M39.8125 0C39.609375 0.0351563 39.425781 0.136719 39.28125 0.28125L14.96875 24.59375L12 21.625L12 19C12 18.449219 11.550781 18 11 18L5 18C4.96875 18 4.9375 18 4.90625 18C4.875 18 4.84375 18 4.8125 18C4.335938 18.089844 3.992188 18.511719 4 19L4 25C4 25.550781 4.449219 26 5 26L7.625 26L12.59375 30.96875L7.5625 36L1 36C0.96875 36 0.9375 36 0.90625 36C0.875 36 0.84375 36 0.8125 36C0.335938 36.089844 -0.0078125 36.511719 0 37L0 49C0 49.550781 0.449219 50 1 50L13 50C13.550781 50 14 49.550781 14 49L14 42.4375L19.03125 37.40625L24 42.375L24 45C24 45.550781 24.449219 46 25 46L31 46C31.550781 46 32 45.550781 32 45L32 39C32 38.449219 31.550781 38 31 38L28.375 38L25.40625 35.03125L49.71875 10.71875C49.90625 10.527344 50.007813 10.265625 50 10L50 1C50 0.449219 49.550781 0 49 0L40 0C39.96875 0 39.9375 0 39.90625 0C39.875 0 39.84375 0 39.8125 0 Z M 40.4375 2L48 2L48 9.5625L23.96875 33.59375L20.90625 30.53125L43.71875 7.71875C44.042969 7.417969 44.128906 6.941406 43.933594 6.546875C43.742188 6.148438 43.308594 5.929688 42.875 6C42.652344 6.023438 42.441406 6.125 42.28125 6.28125L19.46875 29.09375L16.40625 26.03125 Z M 6 20L10 20L10 21.625L7.625 24L6 24 Z M 11 23.4375L14.15625 26.59375C14.238281 26.707031 14.347656 26.804688 14.46875 26.875L18.65625 31.09375C18.738281 31.207031 18.847656 31.304688 18.96875 31.375L23.15625 35.59375C23.238281 35.707031 23.347656 35.804688 23.46875 35.875L26.5625 39L25 40.5625L19.84375 35.40625C19.78125 35.324219 19.707031 35.25 19.625 35.1875L14.875 30.4375C14.867188 30.417969 14.855469 30.394531 14.84375 30.375L14.8125 30.34375C14.792969 30.320313 14.773438 30.300781 14.75 30.28125L14.65625 30.1875C14.636719 30.175781 14.613281 30.164063 14.59375 30.15625L9.46875 25 Z M 14.03125 32.40625L17.59375 35.96875L13 40.5625L9.4375 37 Z M 2 38L7.5625 38L12 42.4375L12 48L2 48 Z M 4.8125 40C4.335938 40.089844 3.992188 40.511719 4 41L4 45C4 45.550781 4.449219 46 5 46L9 46C9.550781 46 10 45.550781 10 45L10 41C10 40.449219 9.550781 40 9 40L5 40C4.96875 40 4.9375 40 4.90625 40C4.875 40 4.84375 40 4.8125 40 Z M 28.40625 40L30 40L30 44L26 44L26 42.40625 Z M 6 42L8 42L8 44L6 44Z" fill="#FFFFFF"/>
+            </svg>
+        </h2>
+        <div class="text-center">
+            <i class="fa fa-horizontal-rule"></i>
+            <span>
+                یه جای خوب برای دانلود بازی
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="40" height="40">
+                    <path d="M16 4C9.3845336 4 4 9.3845336 4 16C4 22.615466 9.3845336 28 16 28C20.314446 28 24.099116 25.70769 26.210938 22.283203L26.736328 21.431641L17.908203 16L26.736328 10.568359L26.210938 9.7167969C24.099115 6.2923096 20.314446 4 16 4 z M 16 6C19.2433 6 22.049258 7.5906313 23.875 9.9785156L14.091797 16L15.476562 16.851562L23.875 22.021484C22.049258 24.409369 19.2433 26 16 26C10.465466 26 6 21.534534 6 16C6 10.465466 10.465466 6 16 6 z M 23 15 A 1 1 0 0 0 23 17 A 1 1 0 0 0 23 15 z M 27 15 A 1 1 0 0 0 27 17 A 1 1 0 0 0 27 15 z" fill="#FFFFFF"/>
+                </svg>
+            </span>
+            <i class="fa fa-horizontal-rule"></i>
+        </div>
+    </div>
+</div>
+<main class="main row">
+    <div class="Banner row col-12">
+        <div class="col-lg-6 col-md-6 col-12">
+            <a id="Banner1" href="#" class="Banner-Photo"></a>
+            <p>یه لیست از بازی هایی با موضوع برنامه نویسی</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <a id="Banner2" href="#" class="Banner-Photo2"></a>
+            <p>لیست بازی های ایرانی</p>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-8 col-xl-8 col-12 mb-3 top-box-right">
+        <div class="card m-2 h-100">
+            <div class="card-header">
+                <ul class="nav nav-tabs nav-fill card-header-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tab-popular-games" data-toggle="tab" href="#popular-games" role="tab" aria-controls="tab-popular-games" aria-selected="true">
+                            <i class="fal fa-gamepad-alt mx-2"></i>محبوب ترین بازی ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-popular-Software" data-toggle="tab" href="#popular-Software" role="tab" aria-controls="tab-popular-Software" aria-selected="false">
+                            <i class="fal fa-desktop-alt mx-2"></i>محبوب ترین نرم افزارها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="popular-games">
+                        <ul class="links-popular-games list-unstyled">
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G1" id="tab-G1"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G2" id="tab-G2"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G3" id="tab-G3"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G4" id="tab-G4"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G5" id="tab-G5"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G6" id="tab-G6"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G7" id="tab-G7"></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="popular-Software">
+                        <ul class="links-popular-Software list-unstyled">
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S1" id="tab-S1"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S2" id="tab-S2"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S3" id="tab-S3"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S4" id="tab-S4"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S5" id="tab-S5"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S6" id="tab-S6"></a></li>
+                            <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S7" id="tab-S7"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-xl-4 col-12 top-box-left">
+        <div class="card Setting-box m-2">
+            <div data-aos="fade-in" class="text-center my-2">
+                <h2>پل ارتباطی</h2>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+                <span>با ما در تماس باشید</span>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+            </div>
+            <div class="row mt-4 mb-2">
+                <div data-aos="fade-in" class="contact-card col-lg-3 col-md-4 col-6 d-flex align-items-center flex-column justify-content-center">
+                    <div class="logo p-3">
+                        <i class="fa fa-paper-plane"></i>
+                    </div>
+                    <div class="contact-link text-center p-2">
+                        <p>درخواست بازی</p>
+                        <a href="">BaziPc@</a>
+                    </div>
+                </div>
+                <div data-aos="fade-in" class="contact-card col-lg-3 col-md-4 col-6 d-flex align-items-center flex-column justify-content-center">
+                    <div class="logo p-3">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="contact-link text-center p-2">
+                        <p>اینستاگرام</p>
+                        <a href="">BaziPc@</a>
+                    </div>
+                </div>
+                <div data-aos="fade-in" class="contact-card col-lg-3 col-md-4 col-6 d-flex align-items-center flex-column justify-content-center">
+                    <div class="logo p-3">
+                        <i class="fa fa-user-headset"></i>
+                    </div>
+                    <div class="contact-link text-center p-2">
+                        <p>رفع مشکلات</p>
+                        <a href="">BaziPc@</a>
+                    </div>
+                </div>
+                <div data-aos="fade-in" class="contact-card col-lg-3 col-md-4 col-6 d-flex align-items-center flex-column justify-content-center">
+                    <div class="logo p-3">
+                        <i class="fa fa-bullhorn"></i>
+                    </div>
+                    <div class="contact-link text-center p-2">
+                        <p>کانال تلگرام</p>
+                        <a href="">BaziPc@</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-8 col-xl-8 col-12 card-body right-box">
+        <div class="new-post-main">
+            <div data-aos="fade-in" class="text-center">
+                <h2>جدید ترین مطالب</h2>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+                <span> تا دیر نشده دانلود کن <i class="fa fa-clock"></i></span>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+            </div>
+            <div class="row m-2 mt-5 align-items-center">
+                <img data-aos="zoom-in-left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG1.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-right" class="col-lg-9 col-md-9 p-3">
+                    <h4>بازی رزیدنت اویل ویلیج</h4>
+                    <h6 class="text-muted">
+                        ترسناک
+                        <span class="dot"></span>
+                        اول شخص
+                        <span class="dot"></span>
+                        شوتر
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa deleniti, doloremque eveniet explicabo facere hic illo iure labore magnam molestiae perferendis quaerat quas qui ratione tempore vitae? Ipsam?
+                    </p>
+                    <a href="" id="NG1Home" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center flex-row-reverse">
+                <img data-aos="zoom-in-right" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG2.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-left" class="col-lg-9 col-md-9 p-3">
+                    <h4>اساسین کرید والهالا</h4>
+                    <h6 class="text-muted">
+                        جهان باز
+                        <span class="dot"></span>
+                        سوم شخص
+                        <span class="dot"></span>
+                        مخفی کاری
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="NG2Home" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center">
+                <img data-aos="zoom-in-left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG3.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-right" class="col-lg-9 col-md-9 p-3">
+                    <h4>بازی جی تی ای وی</h4>
+                    <h6 class="text-muted">
+                        جهان باز
+                        <span class="dot"></span>
+                        شوتر
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="NG3Home" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="suggest mt-4">
+            <div data-aos="fade-in" class="text-center">
+                <h2>بازی های پیشنهادی</h2>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+                <span> هر گیمری باید بازیشون کنه <i class="fa fa-medal"></i></span>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+            </div>
+            <div class="row m-2 mt-5 align-items-center flex-row-reverse">
+                <img data-aos="zoom-in-right" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SuggestGames/SG1.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-left" class="col-lg-9 col-md-9 p-3">
+                    <h4>بازی رزیدنت اویل ویلیج</h4>
+                    <h6 class="text-muted">
+                        ترسناک
+                        <span class="dot"></span>
+                        اول شخص
+                        <span class="dot"></span>
+                        شوتر
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa deleniti, doloremque eveniet explicabo facere hic illo iure labore magnam molestiae perferendis quaerat quas qui ratione tempore vitae? Ipsam?
+                    </p>
+                    <a href="" id="suggest-link1" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center">
+                <img data-aos="zoom-in-left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SuggestGames/SG2.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-right" class="col-lg-9 col-md-9 p-3">
+                    <h4>اساسین کرید والهالا</h4>
+                    <h6 class="text-muted">
+                        جهان باز
+                        <span class="dot"></span>
+                        سوم شخص
+                        <span class="dot"></span>
+                        مخفی کاری
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="suggest-link2" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center flex-row-reverse">
+                <img data-aos="zoom-in-right" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SuggestGames/SG3.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-left" class="col-lg-9 col-md-9 p-3">
+                    <h4>بازی جی تی ای وی</h4>
+                    <h6 class="text-muted">
+                        جهان باز
+                        <span class="dot"></span>
+                        شوتر
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="suggest-link3" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center">
+                <img data-aos="zoom-in-left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SuggestGames/SG4.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-right" class="col-lg-9 col-md-9 p-3">
+                    <h4>بتلفیلد 2042</h4>
+                    <h6 class="text-muted">
+                        اول شخص
+                        <span class="dot"></span>
+                        شوتر
+                        <span class="dot"></span>
+                        آنلاین
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="suggest-link4" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center flex-row-reverse">
+                <img data-aos="zoom-in-right" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SuggestGames/SG5.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-left" class="col-lg-9 col-md-9 p-3">
+                    <h4>DAYSGONE</h4>
+                    <h6 class="text-muted">
+                        جهان باز
+                        <span class="dot"></span>
+                        سوم شخص
+                        <span class="dot"></span>
+                        آخر الزمانی
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="suggest-link5" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center">
+                <img data-aos="zoom-in-left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SuggestGames/SG6.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-right" class="col-lg-9 col-md-9 p-3">
+                    <h4>HORIZON FORBIDDEN WEST</h4>
+                    <h6 class="text-muted">
+                        جهان باز
+                        <span class="dot"></span>
+                        سوم شخص
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="suggest-link6" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+            <div class="row m-2 mt-5 align-items-center flex-row-reverse">
+                <img data-aos="zoom-in-right" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SuggestGames/SG7.jpg" alt="" class="img-fluid col-lg-3 col-md-3 image">
+                <div data-aos="zoom-in-left" class="col-lg-9 col-md-9 p-3">
+                    <h4>Back 4 Blood</h4>
+                    <h6 class="text-muted">
+                        اول شخص
+                        <span class="dot"></span>
+                        شوتر
+                        <span class="dot"></span>
+                        زامبی
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cupiditate delectus deleniti earum et, fugiat illo numquam pariatur placeat quidem quos sapiente sed, veritatis voluptate. Esse eveniet nam officia.
+                    </p>
+                    <a href="" id="suggest-link7" class="btn btn-success">ادامه و دانلود <i class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="service-main mt-4">
+            <div data-aos="fade-in" class="text-center">
+                <h2>خدمات وب سایت</h2>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+                <span> چه خدماتی ارائه میدیم <i class="fa fa-wrench"></i></span>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between ">
+                <div data-aos="fade-left" class=" text-center p-3 service-card">
+                    <h5>دانلود بازی</h5>
+                    <p>
+                        اصلی ترین ویژگی و خدمت ما به شما در وبسایت دانلود بازی ها مختلف (اورجینال و کرکی) با ژانر های متفاوت هست هرچه سریعتر به لیست بازی سر بزنید و بازی که علاقه دارید انتخاب و دانلود نمایید. اگر به مشکل بر خوردید حتما با پشتیبانی ارتباط برقرار کنید
+                    </p>
+                </div>
+                <div data-aos="fade-up" class=" text-center p-3 service-card">
+                    <h5>دانلود نرم افزار</h5>
+                    <p>
+                        هر بازی برای اجرا شدن توی سیستم کامپیوتری نیاز به برنامه های مخصوصی داره و درصورت نبود این برنامه ها هنگام اجرا بازی با ارور مواجه می شوید وب سایت ما برای راحتی کار شما این برنامه های مهم در خود جای داده و شما می توانید با دیدن لیست نرم افزار ها چیزی که لازم دارید انتخاب و نصب کنید
+                    </p>
+                </div>
+                <div data-aos="fade-right" class=" text-center p-3 service-card">
+                    <h5>کمک برای انجام بازی ها</h5>
+                    <p>
+                        خیلی از بازی ها هستن که سخت و معما های پیچیده ای دارند انجام این مراحل ممکنه کلی از زمان شمارو بگیره و آخر سر هم به جواب نرسید اما حالا کار برای شما راحت تر شده فقط کافیه به صفحه بازی مورد نظر خودتون برید و از نقشه راه بازی استفاده کنید
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="request mt-4">
+            <div class="text-center">
+                <h2>درخواست بازی</h2>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+                <span> بازی که میخواهی بهمون بگو <i class="fa fa-comment-alt-smile"></i></span>
+                <i class="fa fa-horizontal-rule align-middle"></i>
+            </div>
+            <div class="request-body my-4">
+                <form action="error/404.html" name="request-Game" method="post" class="d-block" id="request-Game">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <label for="request-input" class="form-label form-text">ایمیل(برای اطلاع رسانی به شما)</label>
+                            <input id="request-input" type="email" class="form-control request-input" name="email" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <label for="request-select" class="form-label form-text">ژانر</label>
+                            <select name="mode" id="request-select" class="form-select" required>
+                                <option value="1">شوتر</option>
+                                <option value="2">مخفی کاری</option>
+                                <option value="3">جهان باز</option>
+                                <option value="4">ورزشی</option>
+                                <option value="5">شبیه ساز</option>
+                                <option value="6">استراتژیک</option>
+                                <option value="7">نقش آفرینی</option>
+                                <option value="8">مسابقه ای</option>
+                                <option value="9">موارد دیگر</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="request-textarea" class="form-label form-text">لیست درخواست</label>
+                    <textarea class="form-control" name="name-Game" id="request-textarea" maxlength="200" cols="30" rows="10" placeholder="نام بازی یا بازی هایی که درخواست دارید را بنویسید (از اینتر برای جداکردن بازی ها استفاده کنید)" required></textarea>
+                    <button class="btn btn-outline-secondary my-2" type="submit">ثبت درخواست</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-xl-4 col-12 left-box">
+        <div class="card m-2">
+            <div class="card-header">
+                <h5 class="text-center">
+                    جدیدترین آپلود ها
+                    <i class="fa fa-upload"></i>
+                </h5>
+            </div>
+            <div class="card-body">
+                <a class="newGame NG1" id="NG1" href="">
+                    <img id="NGI1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG1.jpg" alt="" class="img-fluid card-img image">
+                </a>
+                <a class="newGame NG2" id="NG2" href="">
+                    <img id="NGI2" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG2.jpg" alt="" class="img-fluid card-img image">
+                </a>
+                <a class="newGame NG3" id="NG3" href="">
+                    <img id="NGI3" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG3.jpg" alt="" class="img-fluid card-img image">
+                </a>
+            </div>
+        </div>
+        <div class="card m-2">
+            <div class="card-header">
+                <h5 class="text-center">
+                    بازی و برنامه های آینده
+                    <i class="fal fa-clipboard-list"></i>
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="soonGame SU1">
+                    <img id="SUI1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SoonUpload/SU1.jpg" alt="" class="img-fluid card-img image">
+                </div>
+                <div class="soonGame SU2">
+                    <img id="SUI2" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SoonUpload/SU2.jpg" alt="" class="img-fluid card-img image">
+                </div>
+                <div class="soonGame SU3">
+                    <img id="SUI3" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SoonUpload/SU3.jpg" alt="" class="img-fluid card-img image">
+                </div>
+            </div>
+        </div>
+        <div class="card m-2">
+            <div class="card-header">
+                <h5 class="text-center">
+                    در دست انتشار
+                    <i class="fa fa-users-cog"></i>
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="FutureGames FG1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG1.jpg" alt="" class="img-fluid card-img image">
+                    <span class="title-Future TF1">تاریخ انتشار:2020/05/15</span>
+                </div>
+                <div class="FutureGames FG2">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG2.jpg" alt="" class="img-fluid card-img image">
+                    <span class="title-Future TF2">تاریخ انتشار:2020/05/15</span>
+                </div>
+                <div class="FutureGames FG3">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG3.jpg" alt="" class="img-fluid card-img image">
+                    <span class="title-Future TF3">تاریخ انتشار:2020/05/15</span>
+                </div>
+                <div class="FutureGames FG4">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG4.jpg" alt="" class="img-fluid card-img image">
+                    <span class="title-Future TF4">تاریخ انتشار:2020/05/15</span>
+                </div>
+                <div class="FutureGames FG5">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG5.jpg" alt="" class="img-fluid card-img image">
+                    <span class="title-Future TF5">تاریخ انتشار:2020/05/15</span>
+                </div>
+            </div>
+        </div>
+        <div class="card m-2">
+            <div class="card-header">
+                <h5 class="text-center">
+                    نرم افزار های کاربردی
+                    <i class="fa fa-desktop align-middle"></i>
+                </h5>
+            </div>
+            <div class="card-body">
+                <ul class="Practical-Software list-unstyled">
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link1" id="PSI1"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link2" id="PSI2"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link3" id="PSI3"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link4" id="PSI4"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link5" id="PSI5"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link6" id="PSI6"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link7" id="PSI7"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card m-2">
+            <div class="card-header">
+                <h5 class="text-center">
+                    عناوین برگزیده
+                    <i class="fa fa-award align-middle"></i>
+                </h5>
+            </div>
+            <div class="card-body">
+                <ul class="Practical-Software list-unstyled">
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link1" id="FI1"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link2" id="FI2"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link3" id="FI3"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link4" id="FI4"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link5" id="FI5"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link6" id="FI6"></a></li>
+                    <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link7" id="FI7"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card m-2">
+            <div class="card-header">
+                <h5 class="text-center">
+                    تبلیغات تصویری
+                    <i class="fa fa-ad align-middle"></i>
+                </h5>
+            </div>
+            <div class="card-body">
+                <a href="" id="AdLink1" class="imagead"><img src="image/AD/Ad1.jpg" alt="" class="img-fluid card-img Adimg1"></a>
+                <a href="" id="AdLink2" class="imagead"><img src="image/AD/Ad2.jpg" alt="" class="img-fluid card-img Adimg2"></a>
+                <a href="" id="AdLink3" class="imagead"><img src="image/AD/Ad1.jpg" alt="" class="img-fluid card-img Adimg3"></a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer row overflow-hidden">
+    <div class="col-12 text-center">
+        <h1 data-toggle="tooltip" data-placement="bottom" title="یه مکان خوب برای دانلود بازی و نرم افزار☺">بازی پیسی</h1>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 p-3">
+        <p>جدید ترین آپلود <i class="fa fa-bullhorn"></i></p>
+        <a class="newGame NG1" id="footerNG" href="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG1.jpg" alt="" class="img-fluid card-img image">
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 p-3">
+        <p>اطلاعات وبسایت <i class="fa fa-chart-bar"></i></p>
+        <ul class="Practical-Software list-unstyled row">
+            <li class="col-6"><p>تعداد بازی ها: <span class="Game-num"></span></p></li>
+            <li class="col-6"><p>تعداد نرم‌افزار ها: <span class="software-num"></span></p></li>
+            <li class="col-6"><p>رتبه جهانی: <span class="national-rate"></span></p></li>
+            <li class="col-6"><p>رتبه ایران: <span class="iran-rate"></span></p></li>
+            <li class="col-12"><p>تعداد بازدید این ماه: <span class="view-mon"></span></p></li>
+        </ul>
+
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 p-3">
+        <p>تماس با ما <i class="fa fa-user-headset"></i></p>
+        <p>تلگرام پشتیبانی:<a href="tg:https://t.me/hacker_siyasi">hacker_siyasi@</a></p>
+        <p>کانال تلگرام:<a href="tg:https://t.me/‌Bazie_PC">‌Bazie_PC@</a></p>
+    </div>
+    <div class="col-md-6 d-md-block d-lg-none d-none">
+        <p>ثبت تبلیغات <i class="fa fa-ad"></i></p>
+        <span>برای قرار دادن تبلیغ خود در وبسایت به ایدی پشتیبانی در تلگرام پیام دهید و با ارسال کد تخفیف Tab768 از یک تخفیف خوب برای سفارشتون بهره‌مند شوید <i class="fa fa-badge-percent"></i> </span>
+    </div>
+</footer>
+<!-- لینک های js -->
+<script src="assets/jquery-3.6.0.min.js"></script>
+<script src="assets/popper.min.js"></script>
+<script src="assets/bootstrap.min.js"></script>
+<script src="assets/self/Main.js"></script>
+<script src="assets/vanilla-tilt.min.js"></script>
+<script src="assets/aos.js"></script>
+<script type="text/javascript">
+    //Vanilla
+    VanillaTilt.init(document.querySelectorAll(".img-Box,.newGame,.soonGame,.FutureGames,.imagead"), {
+        max: 12,
+        speed: 400,
+    });
+    //
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        disable: 'mobile',
+        once: true
+    });
+
+</script>
+</body>
+</html>
