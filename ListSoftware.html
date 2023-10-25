@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست نرم افزار ها | BaziPc</title>
+    <!-- بخش سئو -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="image/icon.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- لینک های css -->
+    <link rel="stylesheet" href="assets/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/self/Main.css">
+    <link rel="stylesheet" href="assets/self/List.css">
+    <link rel="stylesheet" href="assets/fontawesome.min.css">
+</head>
+<body class="">
+
+<nav class="navbar fixed-top">
+    <ul class="nav navbar-link">
+        <li class="nav-item"><a href="index.html" class="nav-link">صفحه اصلی<i class="fa fa-home mx-1"></i></a></li>
+        <li class="nav-item"><a href="ListGame.html" class="nav-link">لیست بازی ها <i class="fa fa-gamepad mx-1"></i></a></li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="شما هم اکنون در این بخش هستید"><a href="ListSoftware.html" class="nav-link">لیست نرم افزار ها<i class="fa fa-windows mx-1"></i></a></li>
+        <li class="nav-item"><a href="" class="nav-link">درباره ما<i class="fa fa-users mx-1"></i></a></li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="کانال تلگرام"><a href="" class="nav-link" id="Telegram"><i class="fa fa-paper-plane"></i></a></li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="کانال اینستاگرام"><a href="" class="nav-link" id="Instagram"><i class="fa fa-instagram"></i></a></li>
+        <li class="nav-item search">
+            <i class="fa fa-search fa-2x"></i>
+            <form class="search-box" data-toggle="tooltip" title="بعد از نوشتن اینتر بزنید" action="">
+                <label>
+                    <i class="fa fa-times-circle"></i>
+                    <input type="text" class="form-control" placeholder="دنبال چی میگردی؟">
+                </label>
+            </form>
+        </li>
+    </ul>
+    <ul class="nav navbar-Setting">
+        <li class="night-mode">
+            <label>
+                <input type="checkbox">
+                <svg class="svg-icon night-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502.001 502.001"  xml:space="preserve"  height="24">
+                    <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path style="fill:#FBB03B;" d="M191.622,310.378C111.647,230.404,101.976,105.871,161.042,10C72.148,48.759,10,137.399,10,240.57    C10,379.431,122.569,492,261.431,492c103.17,0,191.811-62.148,230.569-151.042C396.129,400.024,271.597,390.353,191.622,310.378z"/>
+                            <path d="M261.431,502c-69.831,0-135.481-27.193-184.859-76.571S0,310.4,0,240.57C0,136.532,61.644,42.43,157.045,0.834    c4.005-1.746,8.683-0.69,11.548,2.611c2.865,3.3,3.255,8.079,0.962,11.8c-58.118,94.333-46.136,212.789,29.137,288.062l0,0    c43.412,43.412,101.198,65.772,160.425,65.775c43.469,0.002,87.707-12.038,127.637-36.639c3.721-2.292,8.5-1.902,11.801,0.962    c3.301,2.865,4.357,7.542,2.611,11.548C459.57,440.356,365.469,502,261.431,502z M137.166,33.53    C65.113,76.787,20,155.044,20,240.57C20,373.695,128.305,482,261.431,482c85.525,0,163.783-45.113,207.04-117.167    c-41.854,19.137-88.248,27.223-133.563,22.93c-28.056-2.658-55.063-9.883-80.271-21.477    c-26.103-12.004-49.683-28.436-70.085-48.838c-20.402-20.402-36.833-43.982-48.838-70.084    c-11.593-25.209-18.819-52.216-21.477-80.272C109.944,121.781,118.03,75.385,137.166,33.53z"/>
+                        </g>
+                        <g>
+                            <path d="M260.265,463c-66.337,0-128.605-29.392-170.836-80.638c-3.512-4.262-2.904-10.564,1.358-14.077    c4.262-3.512,10.563-2.905,14.077,1.358C143.281,416.262,199.923,443,260.265,443c5.522,0,10,4.477,10,10S265.787,463,260.265,463    z"/>
+                        </g>
+                        <g>
+                            <path d="M77.01,356.913c-3.462,0-6.828-1.799-8.678-5.016c-3.001-5.219-5.821-10.623-8.38-16.063    c-2.352-4.997-0.207-10.955,4.791-13.306c4.996-2.353,10.955-0.206,13.306,4.791c2.327,4.946,4.891,9.86,7.621,14.605    c2.753,4.788,1.104,10.901-3.683,13.654C80.415,356.484,78.701,356.913,77.01,356.913z"/>
+                        </g>
+                    </g>
+                </svg>
+            </label>
+        </li>
+    </ul>
+    <div class="Mobile-Toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</nav>
+<main class="main mt-5">
+    <div class="row flex-wrap my-3">
+        <div class="col-lg-8 col-md-8 col-xl-8 col-12 mb-3 top-box-right">
+            <div class="card m-2 h-100">
+                <div class="card-header">
+                    <ul class="nav nav-tabs nav-fill card-header-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab-popular-games" data-toggle="tab" href="#popular-games" role="tab" aria-controls="tab-popular-games" aria-selected="true">
+                                <i class="fal fa-gamepad-alt mx-2"></i>محبوب ترین بازی ها
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tab-popular-Software" data-toggle="tab" href="#popular-Software" role="tab" aria-controls="tab-popular-Software" aria-selected="false">
+                                <i class="fal fa-desktop-alt mx-2"></i>محبوب ترین نرم افزارها
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="popular-games">
+                            <ul class="links-popular-games list-unstyled">
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G1" id="tab-G1"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G2" id="tab-G2"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G3" id="tab-G3"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G4" id="tab-G4"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G5" id="tab-G5"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G6" id="tab-G6"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-G7" id="tab-G7"></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade active show" id="popular-Software">
+                            <ul class="links-popular-Software list-unstyled">
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S1" id="tab-S1"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S2" id="tab-S2"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S3" id="tab-S3"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S4" id="tab-S4"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S5" id="tab-S5"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S6" id="tab-S6"></a></li>
+                                <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="tab-S7" id="tab-S7"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xl-4 col-12 top-box-left">
+            <div class="card Setting-box m-2">
+                <form action="" method="post" id="Setting" class="card-body">
+                    <label for="Setting" class="form-label m-2">
+                        <span>نوع:</span>
+                        <select name="type" class="rounded m-2 form-select Sofwaremode">
+                            <option>کاربردی</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                        </select>
+                        <span>حجم(فعلا در دسترس نمی باشد):</span>
+                        <select name="size" disabled class="rounded form-select">
+                            <option>کمتر از 100 مگ</option>
+                            <option>کمتر از 500 مگ</option>
+                            <option>کمتر از 1 گیگ</option>
+                            <option>کمتر از 5 گیگ</option>
+                            <option>کمتر از 10 گیگ</option>
+                            <option selected>بیشتر از 10 گیگ</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="Setting" class="form-label m-2">
+                        <span>جست و جو بر اساس نام:</span>
+                        <input type="text" name="text" class="form-control" placeholder="نام بازی وارد نمایید">
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-xl-8 col-12 right-box">
+            <div class="path mb-lg-2 mb-md-2 mb-5">
+                <svg class="svg-icon" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" xml:space="preserve">
+                    <g xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<polygon style="fill:#556080;" points="25,10.704 20,3.704 0,3.704 0,10.704 0,54.704 58,54.704 58,17.704 30,17.704   "/>
+        <polygon style="fill:#3D4451;" points="30,17.704 58,17.704 58,10.704 25,10.704   "/>
+	</g>
+                        <g>
+		<circle style="fill:#D0E8F9;" cx="45.167" cy="40.5" r="9.796"/>
+                            <path style="fill:#EAF6FD;" d="M48.72,31.379L36.046,44.052c0.706,1.81,1.93,3.357,3.495,4.459l13.638-13.638    C52.077,33.308,50.53,32.084,48.72,31.379z"/>
+                            <path style="fill:#B1D3EF;" d="M59.112,53.995l-5.97-6.244c1.746-1.919,2.82-4.458,2.82-7.251c0-5.953-4.843-10.796-10.796-10.796    S34.371,34.547,34.371,40.5s4.843,10.796,10.796,10.796c2.442,0,4.689-0.824,6.499-2.196l6.001,6.276    c0.196,0.206,0.459,0.309,0.723,0.309c0.249,0,0.497-0.092,0.691-0.277C59.48,55.027,59.494,54.394,59.112,53.995z M36.371,40.5    c0-4.85,3.946-8.796,8.796-8.796s8.796,3.946,8.796,8.796s-3.946,8.796-8.796,8.796S36.371,45.35,36.371,40.5z"/>
+	</g>
+</g>
+                </svg>
+                <a href="index.html">بازی پیسی</a>
+                <i class="fa fa-angle-left"></i>
+                <a href="#">لیست نرم افزار ها</a>
+
+            </div>
+
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="GameBox m-2 card row">
+                <div class="card-body row">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-12 p-2 img-Box">
+                        <img class="img-fluid rounded image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SisMisSmart.jpg" alt="دانلود بازی پورتال">
+                    </div>
+                    <div class="description mt-3 col-lg-9 col-xl-9 col-md-12 col-12">
+                        <h3>دانلود درایور Nvidia آخرین نسخه</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae delectus deserunt dignissimos excepturi, hic id magni molestiae neque officia recusandae repellendus sapiente sit suscipit tenetur voluptates. Sunt, totam?
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-GameBox card-footer col-12 d-flex align-items-center justify-content-between">
+                    <a class="btn btn-success" href="">ادامه مطلب <i class="fa fa-download"></i></a>
+                    <div class="left-footer-GameBox">
+                        <span class="rate">
+                            امتیاز:
+                            <i class="fa fa-times active"></i>
+                            <i class="fa fa-circle active"></i>
+                            <i class="fa fa-triangle active"></i>
+                            <i class="fa fa-square"></i>
+                            <i class="fa fa-star"></i>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <a data-toggle="tooltip" id="more-list" class="more-List btn btn-outline-light d-block">
+                مشاهده موارد بیشتر
+                <i class="fa fa-angle-double-down align-middle"></i>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xl-4 col-12 left-box">
+            <div class="card m-2">
+                <div class="card-header">
+                    <h5 class="text-center">
+                        جدیدترین آپلود ها
+                        <i class="fa fa-upload"></i>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <a class="newGame NG1" id="NG1" href="">
+                        <img id="NGI1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG1.jpg" alt="" class="img-fluid card-img image">
+                    </a>
+                    <a class="newGame NG2" id="NG2" href="">
+                        <img id="NGI2" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG2.jpg" alt="" class="img-fluid card-img image">
+                    </a>
+                    <a class="newGame NG3" id="NG3" href="">
+                        <img id="NGI3" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG3.jpg" alt="" class="img-fluid card-img image">
+                    </a>
+                </div>
+            </div>
+            <div class="card m-2">
+                <div class="card-header">
+                    <h5 class="text-center">
+                        بازی و برنامه های آینده
+                        <i class="fal fa-clipboard-list"></i>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="soonGame SU1">
+                        <img id="SUI1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SoonUpload/SU1.jpg" alt="" class="img-fluid card-img image">
+                    </div>
+                    <div class="soonGame SU2">
+                        <img id="SUI2" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SoonUpload/SU2.jpg" alt="" class="img-fluid card-img image">
+                    </div>
+                    <div class="soonGame SU3">
+                        <img id="SUI3" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/SoonUpload/SU3.jpg" alt="" class="img-fluid card-img image">
+                    </div>
+                </div>
+            </div>
+            <div class="card m-2">
+                <div class="card-header">
+                    <h5 class="text-center">
+                        در دست انتشار
+                        <i class="fa fa-users-cog"></i>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="FutureGames FG1">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG1.jpg" alt="" class="img-fluid card-img image">
+                        <span class="title-Future TF1">تاریخ انتشار:2020/05/15</span>
+                    </div>
+                    <div class="FutureGames FG2">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG2.jpg" alt="" class="img-fluid card-img image">
+                        <span class="title-Future TF2">تاریخ انتشار:2020/05/15</span>
+                    </div>
+                    <div class="FutureGames FG3">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG3.jpg" alt="" class="img-fluid card-img image">
+                        <span class="title-Future TF3">تاریخ انتشار:2020/05/15</span>
+                    </div>
+                    <div class="FutureGames FG4">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG4.jpg" alt="" class="img-fluid card-img image">
+                        <span class="title-Future TF4">تاریخ انتشار:2020/05/15</span>
+                    </div>
+                    <div class="FutureGames FG5">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/FutureGames/FG5.jpg" alt="" class="img-fluid card-img image">
+                        <span class="title-Future TF5">تاریخ انتشار:2020/05/15</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card m-2">
+                <div class="card-header">
+                    <h5 class="text-center">
+                        نرم افزار های کاربردی
+                        <i class="fa fa-desktop align-middle"></i>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ul class="Practical-Software list-unstyled">
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link1" id="PSI1"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link2" id="PSI2"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link3" id="PSI3"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link4" id="PSI4"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link5" id="PSI5"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link6" id="PSI6"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Practical-Software-link7" id="PSI7"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card m-2">
+                <div class="card-header">
+                    <h5 class="text-center">
+                        عناوین برگزیده
+                        <i class="fa fa-award align-middle"></i>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ul class="Practical-Software list-unstyled">
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link1" id="FI1"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link2" id="FI2"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link3" id="FI3"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link4" id="FI4"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link5" id="FI5"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link6" id="FI6"></a></li>
+                        <li><i class="fal fa-angle-double-left mx-2"></i><a href="" class="Favorites-link7" id="FI7"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card m-2 sticky-top position-sticky">
+                <div class="card-header">
+                    <h5 class="text-center">
+                        تبلیغات تصویری
+                        <i class="fa fa-ad align-middle"></i>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <a href="" id="AdLink1" class="imagead"><img src="image/AD/Ad1.jpg" alt="" class="img-fluid card-img Adimg1"></a>
+                    <a href="" id="AdLink2" class="imagead"><img src="image/AD/Ad2.jpg" alt="" class="img-fluid card-img Adimg2"></a>
+                    <a href="" id="AdLink3" class="imagead"><img src="image/AD/Ad1.jpg" alt="" class="img-fluid card-img Adimg3"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</main>
+<footer class="footer row overflow-hidden">
+    <div class="col-12 text-center">
+        <h1 data-toggle="tooltip" data-placement="bottom" title="یه مکان خوب برای دانلود بازی و نرم افزار☺">بازی پیسی</h1>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 p-3">
+        <p>جدید ترین آپلود <i class="fa fa-bullhorn"></i></p>
+        <a class="newGame NG1" id="footerNG" href="">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="image/NewUpload/NG1.jpg" alt="" class="img-fluid card-img image">
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 p-3">
+        <p>اطلاعات وبسایت <i class="fa fa-chart-bar"></i></p>
+        <ul class="Practical-Software list-unstyled row">
+            <li class="col-6"><p>تعداد بازی ها: <span class="Game-num"></span></p></li>
+            <li class="col-6"><p>تعداد نرم‌افزار ها: <span class="software-num"></span></p></li>
+            <li class="col-6"><p>رتبه جهانی: <span class="national-rate"></span></p></li>
+            <li class="col-6"><p>رتبه ایران: <span class="iran-rate"></span></p></li>
+            <li class="col-12"><p>تعداد بازدید این ماه: <span class="view-mon"></span></p></li>
+        </ul>
+
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 p-3">
+        <p>تماس با ما <i class="fa fa-user-headset"></i></p>
+        <p>تلگرام پشتیبانی:<a href="tg:https://t.me/hacker_siyasi">hacker_siyasi@</a></p>
+        <p>کانال تلگرام:<a href="tg:https://t.me/‌Bazie_PC">‌Bazie_PC@</a></p>
+    </div>
+    <div class="col-md-6 d-md-block d-lg-none d-none">
+        <p>ثبت تبلیغات <i class="fa fa-ad"></i></p>
+        <span>برای قرار دادن تبلیغ خود در وبسایت به ایدی پشتیبانی در تلگرام پیام دهید و با ارسال کد تخفیف Tab768 از یک تخفیف خوب برای سفارشتون بهره‌مند شوید <i class="fa fa-badge-percent"></i> </span>
+    </div>
+</footer>
+
+
+<!--اسکریپت ها-->
+<script src="assets/jquery-3.6.0.min.js"></script>
+<script src="assets/popper.min.js"></script>
+<script src="assets/bootstrap.min.js"></script>
+<script src="assets/self/Main.js"></script>
+<script src="assets/vanilla-tilt.min.js"></script>
+<script src="assets/self/List.js"></script>
+<script type="text/javascript">
+
+    //Vanilla
+    VanillaTilt.init(document.querySelectorAll(".img-Box,.newGame,.soonGame,.FutureGames,.imagead"), {
+        max: 12,
+        speed: 400,
+    });
+
+</script>
+</body>
+</html>
