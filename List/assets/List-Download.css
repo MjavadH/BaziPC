@@ -1,0 +1,86 @@
+.card-body,.password,.path{border-radius: calc( 1.25rem - 2px);}
+.row-cols-3>* {
+    flex: 0 0 auto;
+    width: 32.3333333333%;
+}
+.system-required .fa-windows{
+    color: #00D7DF;
+}
+.off:not(.ZoomS){
+    overflow: hidden !important;
+}
+nav{transition: all .5s linear;}
+.off nav{top: -90px;transition: .5s linear}
+.ScreenShot img{cursor: zoom-in}
+
+.ZoomS{
+    position: fixed;
+    z-index: 110;
+    top: 50%;
+    left: 50%;
+    cursor: zoom-out;
+    transform: translate(-50%,-50%);
+}
+.ZoomS i{cursor: pointer;-webkit-text-stroke: 1px #f1f1f1;}
+.night .ZoomS i{-webkit-text-stroke: 1px #111111;}
+
+.install-help,.fix-bug,.Game-help{margin: 1.5rem 0;}
+.install-header,.fix-bug-header,.DownloadBox-header,.Game-help-header{
+    border-radius: calc( 1.25rem - 2px) calc( 1.25rem - 2px) 0 0;
+    transform: translateY(8px);
+}
+.install-body,.fix-bug-body,.DownloadBox-body,.Game-help-body{
+    border-radius: 0 0 calc( 1.25rem - 2px) calc( 1.25rem - 2px);
+    font-size: 1.1rem;
+    box-shadow: 7px 7px 20px #a4a4a4, -7px -7px 20px #ffffff;
+}
+.night .install-body,.night .fix-bug-body,.night .DownloadBox-body,.night .Game-help-body{
+    box-shadow:  -7px -7px 20px #08080d,
+    7px 7px 20px #181627;
+}
+.install-header{background: rgb(81,165,171);}
+.install-body{background: rgb(183, 225, 228);}
+.fix-bug-header{background:rgb(255,171,64);}
+.fix-bug-body{background: rgb(255,223,183);}
+.DownloadBox-header{background: rgb(120,187,123);}
+.DownloadBox-body{background: rgb(196,255,197)}
+.night .install-body{background: rgb(55,113,117);}
+.night .fix-bug-body{background: rgb(154,97,25);}
+.night .DownloadBox-body{background: rgb(58,109,59);}
+.Game-help-header,.night .Game-help-body{background: rgb(13,53,98);color: #f1f1f1}
+.Game-help-body,.night .Game-help-header{background: rgb(20,83,154);color: #f1f1f1}
+.endGameInfo i{
+    margin-right: .5rem;
+    margin-left: 1rem;
+}
+.night .endGameInfo i{border-color: #f0f0f0}
+.DownloadLink a{
+    width: 100%;
+    padding: 8px;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+.night .DownloadLink a{color: #f1f1f1;}
+.DownloadLink a:hover{
+    background: rgb(169, 219, 170);
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+.night .DownloadLink a:hover{
+    background: rgb(106, 149, 107);
+    color: #0a0a0a;
+}
+.password{
+    margin: .5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: inline-block;
+}
+@media (max-width: 500px) {
+    table{
+        font-size: 2vw;
+    }
+    table svg{
+        height: 15px;
+    }
+}
